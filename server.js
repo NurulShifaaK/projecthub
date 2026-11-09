@@ -33,18 +33,37 @@ const DEFAULT_SETTINGS = {
   testimonials: []
 };
 
-// ---------- tiny JSON "database" ----------
+// ---------- storage: MongoDB if MONGODB_URI is set, otherwise JSON files ----------
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+let mongoStore = null;
+const cache = {};
 function readJSON(file, fallback) {
+  if (mongoStore) return file in cache ? structuredClone(cache[file]) : fallback;
   try { return JSON.parse(fs.readFileSync(file, "utf8")); } catch { return fallback; }
 }
 function writeJSON(file, data) {
+  if (mongoStore) {
+    cache[file] = structuredClone(data);
+    mongoStore.updateOne({ _id: path.basename(file) }, { $set: { data } }, { upsert: true })
+      .catch((e) => console.error("MongoDB save failed:", e.message));
+    return;
+  }
   const tmp = file + ".tmp";
   fs.writeFileSync(tmp, JSON.stringify(data, null, 2));
   fs.renameSync(tmp, file);
 }
-if (!fs.existsSync(PROJECTS_FILE)) writeJSON(PROJECTS_FILE, require("./data/seed-projects"));
-if (!fs.existsSync(SETTINGS_FILE)) writeJSON(SETTINGS_FILE, DEFAULT_SETTINGS);
+async function initStorage() {
+  if (process.env.MONGODB_URI) {
+    const { MongoClient } = require("mongodb");
+    const client = new MongoClient(process.env.MONGODB_URI);
+    await client.connect();
+    mongoStore = client.db().collection("store");
+    for (const doc of await mongoStore.find().toArray()) cache[path.join(DATA_DIR, doc._id)] = doc.data;
+    console.log("  Storage: MongoDB");
+  }
+  if (readJSON(PROJECTS_FILE, null) === null) writeJSON(PROJECTS_FILE, require("./data/seed-projects"));
+  if (readJSON(SETTINGS_FILE, null) === null) writeJSON(SETTINGS_FILE, DEFAULT_SETTINGS);
+}
 
 const getProjects = () => readJSON(PROJECTS_FILE, []).sort((a, b) => (a.order || 0) - (b.order || 0));
 const getSettings = () => ({ ...DEFAULT_SETTINGS, ...readJSON(SETTINGS_FILE, {}) });
@@ -207,7 +226,9 @@ app.get("*", (req, res) => {
   res.status(500).send("Frontend not built yet. Run: npm run build");
 });
 
-app.listen(PORT, () => {
-  console.log(`\n  AI ProjectHub running →  http://localhost:${PORT}`);
-  console.log(`  Admin panel          →  http://localhost:${PORT}${ADMIN_PATH}\n`);
-});
+initStorage()
+  .then(() => app.listen(PORT, () => {
+    console.log(`\n  AI ProjectHub running →  http://localhost:${PORT}`);
+    console.log(`  Admin panel          →  http://localhost:${PORT}${ADMIN_PATH}\n`);
+  }))
+  .catch((e) => { console.error("Could not start:", e.message); process.exit(1); });

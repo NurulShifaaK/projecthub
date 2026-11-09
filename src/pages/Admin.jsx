@@ -183,9 +183,25 @@ function ImagePicker({ api, say, value, onChange, small }) {
     if (file.size > 5 * 1024 * 1024) return say("Image must be under 5 MB");
     setBusy(true);
     try {
-      const dataUrl = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(file); });
-      const { url } = await api("/api/admin/upload", { method: "POST", body: { dataUrl } });
-      onChange(url); say("Image uploaded");
+      const cloud = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
+      const preset = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET;
+      if (cloud && preset) {
+        // upload straight to Cloudinary (permanent URL)
+        const fd = new FormData();
+        fd.append("file", file);
+        fd.append("upload_preset", preset);
+        fd.append("folder", "ai-projecthub");
+        const r = await fetch(`https://api.cloudinary.com/v1_1/${cloud}/image/upload`, { method: "POST", body: fd });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error?.message || "Cloudinary upload failed");
+        onChange(d.secure_url.replace("/upload/", "/upload/f_auto,q_auto,w_1200/"));
+      } else {
+        // fallback: save on this server (lost on free hosting restarts)
+        const dataUrl = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(file); });
+        const { url } = await api("/api/admin/upload", { method: "POST", body: { dataUrl } });
+        onChange(url);
+      }
+      say("Image uploaded. Now click Save project.");
     } catch (e) { say(e.message); }
     setBusy(false);
   }
