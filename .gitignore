@@ -1,4 +1,4 @@
    git rm -r --cached node_modules
    git add .
    git commit -m "Remove node_modules, fix build"
-   git push
+   
