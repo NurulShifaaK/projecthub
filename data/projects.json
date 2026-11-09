@@ -1,0 +1,2013 @@
+[
+  {
+    "id": "1",
+    "slug": "mediscan-ai",
+    "published": true,
+    "order": 1,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=70",
+    "quip": "Like WebMD, but less dramatic.",
+    "category": "Healthcare AI",
+    "title": "MediScan AI – Predict Diseases from Symptoms",
+    "tagline": "Enter symptoms, get an instant AI-based disease prediction with precautions.",
+    "description": "A smart healthcare web app where users select their symptoms and a trained machine learning model predicts the most likely disease, along with a confidence score, description, precautions and which doctor to consult.",
+    "problem": "Many people cannot reach a doctor immediately and search symptoms online, getting confusing or scary results. MediScan gives a structured, data-driven first opinion.",
+    "features": [
+      "Symptom selection with smart search",
+      "Disease prediction using Random Forest / Naive Bayes",
+      "Confidence score for top 3 diseases",
+      "Precautions and specialist recommendation",
+      "Patient history saved per user"
+    ],
+    "useCases": [
+      "Rural health centres for first-level screening",
+      "Health-awareness apps",
+      "Hospital reception triage"
+    ],
+    "techStack": [
+      "Python",
+      "Scikit-learn",
+      "Flask",
+      "HTML/CSS/JS",
+      "SQLite"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "slug": "dermadetect",
+    "published": true,
+    "order": 2,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=70",
+    "quip": "Dermatologist waitlist: 3 weeks. This: 3 seconds.",
+    "category": "Healthcare AI",
+    "title": "DermaDetect – Skin Disease Detection with Deep Learning",
+    "tagline": "Upload a photo of the skin and let a CNN identify the condition.",
+    "description": "A deep learning system that classifies skin conditions such as acne, eczema, melanoma and psoriasis from a photo. Built with transfer learning on a medical image dataset and served through a clean web interface.",
+    "problem": "Skin diseases are common but dermatologists are scarce in many areas. Early detection, especially of melanoma, can save lives.",
+    "features": [
+      "Image upload from phone camera",
+      "CNN model with transfer learning (MobileNet / EfficientNet)",
+      "Shows predicted condition with probability",
+      "Heatmap (Grad-CAM) showing affected region",
+      "Basic care tips per condition"
+    ],
+    "useCases": [
+      "Tele-dermatology apps",
+      "Early cancer screening",
+      "Pharmacy self-check kiosks"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / Keras",
+      "OpenCV",
+      "Flask",
+      "Bootstrap"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–14 days",
+    "featured": false
+  },
+  {
+    "id": "3",
+    "slug": "pneumovision",
+    "published": true,
+    "order": 3,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=70",
+    "quip": "Reads X-rays faster than your guide reads your report.",
+    "category": "Healthcare AI",
+    "title": "PneumoVision – Pneumonia Detection from Chest X-Rays",
+    "tagline": "AI that reads chest X-rays and flags pneumonia in seconds.",
+    "description": "A medical imaging project that uses a convolutional neural network to classify chest X-ray images as Normal or Pneumonia, with a visual explanation of what the model focused on.",
+    "problem": "Radiologists are overloaded and X-ray reports take time. An AI second-opinion tool speeds up diagnosis in busy hospitals.",
+    "features": [
+      "Upload X-ray image (JPG/PNG)",
+      "CNN classifier with 90%+ accuracy",
+      "Grad-CAM heatmap for explainability",
+      "Downloadable PDF report",
+      "Admin dashboard for scan history"
+    ],
+    "useCases": [
+      "Hospital radiology departments",
+      "Rural clinics without radiologists",
+      "Medical education"
+    ],
+    "techStack": [
+      "Python",
+      "PyTorch / TensorFlow",
+      "Streamlit / Flask",
+      "OpenCV",
+      "ReportLab"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–14 days",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "slug": "mindmate",
+    "published": true,
+    "order": 4,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=70",
+    "quip": "Listens better than your group chat.",
+    "category": "Generative AI",
+    "title": "MindMate – AI Mental Health Chatbot with Mood Tracker",
+    "tagline": "A friendly AI companion that listens, tracks mood and suggests coping tips.",
+    "description": "A conversational AI chatbot that detects the user's emotion from text, responds with empathy, tracks daily mood in a chart and suggests breathing exercises, journaling prompts and helpline contacts when needed.",
+    "problem": "Students face stress, exam anxiety and loneliness but hesitate to talk to someone. MindMate offers a safe, always-available first step.",
+    "features": [
+      "Chat interface powered by an LLM API",
+      "Emotion detection using NLP",
+      "Daily mood tracker with charts",
+      "Guided breathing and journaling",
+      "Emergency helpline suggestion on high-risk words"
+    ],
+    "useCases": [
+      "College wellness portals",
+      "Corporate employee wellbeing",
+      "Personal self-care apps"
+    ],
+    "techStack": [
+      "Python",
+      "LLM API (Gemini / OpenAI)",
+      "Flask / FastAPI",
+      "Chart.js",
+      "MongoDB"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–12 days",
+    "featured": true
+  },
+  {
+    "id": "5",
+    "slug": "deepfake-hunter",
+    "published": true,
+    "order": 5,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=70",
+    "quip": "Because 'trust me bro' isn't a verification method.",
+    "category": "Cybersecurity AI",
+    "title": "DeepFake Hunter – Detect Fake Images & Videos",
+    "tagline": "Expose AI-generated fake faces and videos with deep learning.",
+    "description": "A deepfake detection system that analyses images and video frames to decide whether a face is real or AI-generated. Includes frame-by-frame analysis and a final authenticity score.",
+    "problem": "Deepfakes are used for scams, fake news and harassment. Detecting them is one of the hottest research areas right now.",
+    "features": [
+      "Upload image or short video",
+      "Face extraction from each frame",
+      "CNN / XceptionNet based fake classifier",
+      "Authenticity score with frame timeline",
+      "Report download"
+    ],
+    "useCases": [
+      "News fact-checking teams",
+      "Social media moderation",
+      "Cyber crime investigation"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / PyTorch",
+      "OpenCV",
+      "MTCNN",
+      "Flask"
+    ],
+    "difficulty": "Advanced",
+    "duration": "14–18 days",
+    "featured": true
+  },
+  {
+    "id": "6",
+    "slug": "phishguard-ai",
+    "published": true,
+    "order": 6,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=70",
+    "quip": "For relatives who forward 'You won ₹10 lakh' links.",
+    "category": "Cybersecurity AI",
+    "title": "PhishGuard AI – Phishing Website & Email Detector",
+    "tagline": "Paste a link or email, know instantly if it is a scam.",
+    "description": "A machine learning system that checks URLs and email text for phishing signs using features like domain age, URL patterns and suspicious keywords. Comes with a web app and an optional browser extension.",
+    "problem": "Phishing is the number one way people lose money and passwords online. Most users cannot tell a fake link from a real one.",
+    "features": [
+      "URL feature extraction (length, HTTPS, symbols, domain)",
+      "Email text classification with NLP",
+      "Safe / Suspicious / Phishing verdict",
+      "Chrome extension for live checking",
+      "Scan history dashboard"
+    ],
+    "useCases": [
+      "Banking customer safety",
+      "Corporate email security",
+      "Personal browser protection"
+    ],
+    "techStack": [
+      "Python",
+      "Scikit-learn / XGBoost",
+      "Flask",
+      "JavaScript (Chrome Extension)",
+      "SQLite"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": false
+  },
+  {
+    "id": "7",
+    "slug": "fraudshield",
+    "published": true,
+    "order": 7,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=70",
+    "quip": "Your bank's favourite paranoid friend.",
+    "category": "FinTech AI",
+    "title": "FraudShield – Credit Card Fraud Detection",
+    "tagline": "Catch fraudulent transactions in real time with machine learning.",
+    "description": "A fraud detection model trained on real-world style transaction data that handles class imbalance (SMOTE) and flags suspicious transactions with a risk score, shown on a live monitoring dashboard.",
+    "problem": "Banks lose crores every year to card fraud. Detecting fraud instantly without blocking genuine users is a real industry challenge.",
+    "features": [
+      "Data balancing with SMOTE",
+      "Comparison of Logistic Regression, Random Forest, XGBoost",
+      "Real-time transaction risk scoring",
+      "Fraud alert dashboard",
+      "Model accuracy, precision and recall charts"
+    ],
+    "useCases": [
+      "Banks and payment gateways",
+      "E-commerce checkout",
+      "FinTech startups"
+    ],
+    "techStack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "XGBoost",
+      "Streamlit"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": false
+  },
+  {
+    "id": "8",
+    "slug": "stocksense",
+    "published": true,
+    "order": 8,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=70",
+    "quip": "Won't make you rich. Will make your viva interesting.",
+    "category": "FinTech AI",
+    "title": "StockSense – Stock Price Prediction using LSTM",
+    "tagline": "Forecast stock trends with deep learning and live market data.",
+    "description": "A deep learning app that fetches historical stock data, trains an LSTM neural network and predicts future prices, combined with news sentiment to show a buy / hold / sell signal.",
+    "problem": "Students and new investors want data-backed insight instead of guesswork. Time-series forecasting is a top skill for data science jobs.",
+    "features": [
+      "Live data from Yahoo Finance API",
+      "LSTM model for price prediction",
+      "News sentiment analysis",
+      "Interactive candlestick charts",
+      "Compare multiple stocks"
+    ],
+    "useCases": [
+      "Retail investor tools",
+      "Finance learning platforms",
+      "Portfolio analytics"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / Keras",
+      "yfinance",
+      "Plotly",
+      "Streamlit"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": true
+  },
+  {
+    "id": "9",
+    "slug": "resumerank-ai",
+    "published": true,
+    "order": 9,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=900&q=70",
+    "quip": "Sorry HR, the robots read resumes now.",
+    "category": "Career AI",
+    "title": "ResumeRank AI – Smart Resume Screening & Job Matching",
+    "tagline": "AI that reads hundreds of resumes and ranks the best fit in seconds.",
+    "description": "An NLP-powered recruitment tool that extracts skills, education and experience from resumes (PDF/DOCX), compares them with a job description and ranks candidates by match score. Also gives students tips to improve their resume.",
+    "problem": "Recruiters spend hours reading resumes, and students do not know why they get rejected by ATS systems.",
+    "features": [
+      "Resume parsing from PDF / DOCX",
+      "Skill extraction with NLP (spaCy)",
+      "Job description matching score",
+      "Candidate ranking dashboard",
+      "Missing skills suggestions for students"
+    ],
+    "useCases": [
+      "HR departments and recruiters",
+      "College placement cells",
+      "Job portals"
+    ],
+    "techStack": [
+      "Python",
+      "spaCy / NLTK",
+      "Sentence-BERT",
+      "Flask",
+      "React / HTML"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–12 days",
+    "featured": true
+  },
+  {
+    "id": "10",
+    "slug": "interviewpro-ai",
+    "published": true,
+    "order": 10,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=70",
+    "quip": "Practice bombing interviews where nobody's watching.",
+    "category": "Career AI",
+    "title": "InterviewPro AI – Mock Interview Coach with Feedback",
+    "tagline": "Practice interviews with AI and get scored on answers, confidence and voice.",
+    "description": "A virtual interview coach that asks role-based questions, records the student's spoken answer, converts speech to text and uses an LLM to evaluate the answer quality, while also analysing facial confidence through the webcam.",
+    "problem": "Students lose placement opportunities because of nervousness and lack of practice. Real mock interviews are rare and costly.",
+    "features": [
+      "Role-based question bank (HR, technical)",
+      "Speech-to-text answer capture",
+      "LLM-based answer scoring and better answer suggestions",
+      "Webcam eye-contact and emotion analysis",
+      "Final performance report"
+    ],
+    "useCases": [
+      "Placement training cells",
+      "EdTech platforms",
+      "Self-practice for job seekers"
+    ],
+    "techStack": [
+      "Python",
+      "LLM API",
+      "Whisper / SpeechRecognition",
+      "OpenCV",
+      "Flask / React"
+    ],
+    "difficulty": "Advanced",
+    "duration": "14–18 days",
+    "featured": false
+  },
+  {
+    "id": "11",
+    "slug": "smartattend",
+    "published": true,
+    "order": 11,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=70",
+    "quip": "Proxy attendance has officially left the chat.",
+    "category": "Computer Vision",
+    "title": "SmartAttend – Face Recognition Attendance System",
+    "tagline": "No more roll calls — attendance marked automatically by face.",
+    "description": "A face recognition based attendance system that registers students once, then recognises them through a camera and marks attendance automatically with date and time. Exports reports to Excel.",
+    "problem": "Manual attendance wastes class time and proxy attendance is common. Automated face attendance solves both.",
+    "features": [
+      "Student face registration",
+      "Real-time recognition through webcam / CCTV",
+      "Auto attendance with timestamp",
+      "Anti-spoofing (photo detection)",
+      "Excel / PDF attendance reports"
+    ],
+    "useCases": [
+      "Colleges and schools",
+      "Offices and factories",
+      "Event check-in"
+    ],
+    "techStack": [
+      "Python",
+      "OpenCV",
+      "face_recognition / DeepFace",
+      "Flask",
+      "MySQL"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": true
+  },
+  {
+    "id": "12",
+    "slug": "drivealert",
+    "published": true,
+    "order": 12,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=70",
+    "quip": "Coffee's backup plan.",
+    "category": "Computer Vision",
+    "title": "DriveAlert – Driver Drowsiness Detection System",
+    "tagline": "An AI co-pilot that wakes the driver before an accident happens.",
+    "description": "A real-time computer vision system that monitors the driver's eyes and yawning through a camera, calculates eye aspect ratio and raises an alarm when drowsiness is detected.",
+    "problem": "Drowsy driving causes thousands of road accidents every year, especially on highways at night.",
+    "features": [
+      "Real-time face and eye landmark detection",
+      "Eye Aspect Ratio (EAR) and yawn detection",
+      "Loud alarm and on-screen alert",
+      "Drowsiness event log",
+      "Works on low-cost webcam / Raspberry Pi"
+    ],
+    "useCases": [
+      "Truck and cab fleets",
+      "Car safety systems",
+      "Long-distance bus services"
+    ],
+    "techStack": [
+      "Python",
+      "OpenCV",
+      "Dlib / MediaPipe",
+      "Pygame (alarm)",
+      "Raspberry Pi (optional)"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6–8 days",
+    "featured": false
+  },
+  {
+    "id": "13",
+    "slug": "signspeak",
+    "published": true,
+    "order": 13,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=900&q=70",
+    "quip": "Accessibility that actually ships.",
+    "category": "Computer Vision",
+    "title": "SignSpeak – Real-Time Sign Language to Text & Speech",
+    "tagline": "Breaking communication barriers for the deaf and mute community.",
+    "description": "A real-time hand gesture recognition system that converts sign language gestures captured on webcam into text and spoken voice, helping deaf and mute people communicate easily with others.",
+    "problem": "Millions of people use sign language, but most people cannot understand it. This creates daily communication barriers.",
+    "features": [
+      "Hand landmark tracking with MediaPipe",
+      "Gesture classification with deep learning",
+      "Live text output with sentence building",
+      "Text-to-speech voice output",
+      "Custom gesture training"
+    ],
+    "useCases": [
+      "Special schools",
+      "Hospitals and public service counters",
+      "Accessibility apps"
+    ],
+    "techStack": [
+      "Python",
+      "MediaPipe",
+      "TensorFlow / LSTM",
+      "OpenCV",
+      "pyttsx3 / gTTS"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–14 days",
+    "featured": true
+  },
+  {
+    "id": "14",
+    "slug": "cropdoc-ai",
+    "published": true,
+    "order": 14,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=70",
+    "quip": "Plants can't complain. This listens anyway.",
+    "category": "Agriculture AI",
+    "title": "CropDoc AI – Plant Leaf Disease Detection",
+    "tagline": "Farmers click a leaf photo, AI tells the disease and the cure.",
+    "description": "A deep learning system that identifies plant diseases from leaf images for crops like tomato, potato and rice, and suggests organic and chemical remedies in simple language, including a regional language option.",
+    "problem": "Crop diseases destroy a large share of harvests. Farmers often cannot identify diseases early or reach agriculture experts.",
+    "features": [
+      "Leaf image upload from mobile",
+      "CNN model trained on PlantVillage dataset",
+      "Disease name with confidence",
+      "Remedies and fertilizer suggestions",
+      "Multi-language output (English / Tamil / Hindi)"
+    ],
+    "useCases": [
+      "Farmer advisory apps",
+      "Agriculture departments",
+      "Agri-tech startups"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / Keras",
+      "Flask",
+      "HTML/CSS/JS",
+      "Google Translate API"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": true
+  },
+  {
+    "id": "15",
+    "slug": "agripredict",
+    "published": true,
+    "order": 15,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70",
+    "quip": "Farming, but make it data-driven.",
+    "category": "Agriculture AI",
+    "title": "AgriPredict – Crop Recommendation & Yield Prediction",
+    "tagline": "Which crop to grow, how much it will yield — answered by AI.",
+    "description": "A machine learning platform that recommends the best crop based on soil nutrients (N, P, K), pH, rainfall and temperature, and predicts expected yield, with live weather data for the farmer's location.",
+    "problem": "Wrong crop choice leads to low profit and soil damage. Data-driven farming increases income.",
+    "features": [
+      "Soil and climate input form",
+      "Crop recommendation model",
+      "Yield prediction with regression",
+      "Live weather API integration",
+      "Fertilizer recommendation"
+    ],
+    "useCases": [
+      "Farmers and agri cooperatives",
+      "Government agriculture portals",
+      "Agri research"
+    ],
+    "techStack": [
+      "Python",
+      "Scikit-learn",
+      "Flask",
+      "OpenWeather API",
+      "Chart.js"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6–9 days",
+    "featured": false
+  },
+  {
+    "id": "16",
+    "slug": "trafficeye",
+    "published": true,
+    "order": 16,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=70",
+    "quip": "Helmet off? Number plate on camera.",
+    "category": "Smart City AI",
+    "title": "TrafficEye – Helmet & Number Plate Detection",
+    "tagline": "Auto-detect riders without helmets and read their number plates.",
+    "description": "A YOLO-based traffic surveillance system that detects two-wheeler riders without helmets, captures the vehicle number plate, reads it using OCR and stores violations in a dashboard for e-challan generation.",
+    "problem": "Helmet violations cause many road deaths, and manual traffic monitoring cannot cover every junction.",
+    "features": [
+      "Real-time object detection with YOLOv8",
+      "Helmet / no-helmet classification",
+      "Number plate detection and OCR",
+      "Violation database with snapshots",
+      "Auto e-challan report generation"
+    ],
+    "useCases": [
+      "Traffic police departments",
+      "Smart city projects",
+      "Campus gate security"
+    ],
+    "techStack": [
+      "Python",
+      "YOLOv8 (Ultralytics)",
+      "EasyOCR",
+      "OpenCV",
+      "Flask",
+      "MySQL"
+    ],
+    "difficulty": "Advanced",
+    "duration": "12–16 days",
+    "featured": true
+  },
+  {
+    "id": "17",
+    "slug": "fakenews-buster",
+    "published": true,
+    "order": 17,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=900&q=70",
+    "quip": "Your uncle's WhatsApp forwards are about to get fact-checked.",
+    "category": "NLP",
+    "title": "FakeNews Buster – Fake News Detection using NLP",
+    "tagline": "Paste any news headline or article and check if it is real or fake.",
+    "description": "An NLP system that classifies news articles as real or fake using TF-IDF and transformer models (BERT), with a credibility score and highlighted suspicious words.",
+    "problem": "Fake news spreads faster than real news on WhatsApp and social media, causing panic and misinformation.",
+    "features": [
+      "Text and URL input",
+      "TF-IDF + Logistic Regression baseline",
+      "BERT transformer model for higher accuracy",
+      "Credibility score with highlighted words",
+      "Browser-friendly web app"
+    ],
+    "useCases": [
+      "News agencies and fact-checkers",
+      "Social media platforms",
+      "Public awareness"
+    ],
+    "techStack": [
+      "Python",
+      "NLTK",
+      "Scikit-learn",
+      "HuggingFace Transformers",
+      "Flask"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": false
+  },
+  {
+    "id": "18",
+    "slug": "studybuddy-gpt",
+    "published": true,
+    "order": 18,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=70",
+    "quip": "Ctrl+F walked so this could run.",
+    "category": "Generative AI",
+    "title": "StudyBuddy GPT – Chat with Your PDFs & Notes",
+    "tagline": "Upload your textbook, ask questions, get answers with page references.",
+    "description": "A Retrieval-Augmented Generation (RAG) app where students upload PDFs, notes or textbooks and ask questions in natural language. The AI answers from the document itself with exact page references, and can create summaries and flashcards.",
+    "problem": "Students waste hours searching through long PDFs before exams. RAG is the most in-demand GenAI skill in industry today.",
+    "features": [
+      "Upload multiple PDFs",
+      "Text chunking and vector embeddings",
+      "Semantic search with vector database",
+      "LLM answers with page citations",
+      "Auto summary and flashcard generation"
+    ],
+    "useCases": [
+      "Exam preparation",
+      "Company knowledge base bots",
+      "Legal and research document search"
+    ],
+    "techStack": [
+      "Python",
+      "LangChain",
+      "FAISS / ChromaDB",
+      "LLM API (Gemini / OpenAI)",
+      "Streamlit"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–12 days",
+    "featured": true
+  },
+  {
+    "id": "19",
+    "slug": "quizgen-ai",
+    "published": true,
+    "order": 19,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=900&q=70",
+    "quip": "Teachers will either love you or fear you.",
+    "category": "Generative AI",
+    "title": "QuizGen AI – Automatic Question Paper Generator",
+    "tagline": "Turn any syllabus or notes into MCQs, short and long questions instantly.",
+    "description": "A generative AI tool for teachers and students that reads notes or a syllabus and automatically creates MCQs, fill-in-the-blanks and descriptive questions with answer keys, sorted by difficulty and Bloom's taxonomy level.",
+    "problem": "Teachers spend many hours preparing question papers, and students lack enough practice questions.",
+    "features": [
+      "Upload notes (PDF / text)",
+      "MCQ generation with distractor options",
+      "Difficulty and Bloom's level tagging",
+      "Answer key generation",
+      "Export question paper as PDF / Word"
+    ],
+    "useCases": [
+      "Schools and colleges",
+      "Coaching centres",
+      "Online learning platforms"
+    ],
+    "techStack": [
+      "Python",
+      "LLM API / T5 model",
+      "Flask",
+      "React / HTML",
+      "python-docx"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": false
+  },
+  {
+    "id": "20",
+    "slug": "voicevault",
+    "published": true,
+    "order": 20,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=70",
+    "quip": "Jarvis, but your hostel Wi-Fi edition.",
+    "category": "NLP",
+    "title": "VoiceVault – Personal AI Voice Assistant (Jarvis)",
+    "tagline": "Your own Jarvis that talks, searches, opens apps and answers questions.",
+    "description": "A desktop AI voice assistant that listens to commands, opens applications, searches the web, plays music, reads news and weather, sends WhatsApp messages and answers general questions using an LLM.",
+    "problem": "Hands-free computing helps productivity and accessibility. Building a voice assistant shows strong skills in speech and NLP.",
+    "features": [
+      "Wake-word activation",
+      "Speech-to-text and text-to-speech",
+      "Open apps, websites and files",
+      "Weather, news and Wikipedia answers",
+      "LLM-powered general conversation"
+    ],
+    "useCases": [
+      "Personal productivity",
+      "Assistive tech for visually impaired",
+      "Smart home control"
+    ],
+    "techStack": [
+      "Python",
+      "SpeechRecognition",
+      "pyttsx3",
+      "LLM API",
+      "Tkinter / PyQt GUI"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6–9 days",
+    "featured": false
+  },
+  {
+    "id": "21",
+    "slug": "sentiscope",
+    "published": true,
+    "order": 21,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=70",
+    "quip": "Thousands of reviews. Zero reading required.",
+    "category": "NLP",
+    "title": "SentiScope – Product Review Sentiment Analysis Dashboard",
+    "tagline": "Know what customers really feel from thousands of reviews.",
+    "description": "A sentiment analysis dashboard that scrapes or uploads product reviews, classifies them as positive, negative or neutral, extracts the most talked-about features and shows insights with interactive charts and word clouds.",
+    "problem": "Businesses receive thousands of reviews and cannot read each one. Sentiment insight drives better products.",
+    "features": [
+      "Review upload (CSV) or web scraping",
+      "Sentiment classification (VADER + BERT)",
+      "Aspect-based analysis (price, quality, delivery)",
+      "Word clouds and trend charts",
+      "Downloadable insight report"
+    ],
+    "useCases": [
+      "E-commerce sellers",
+      "Brand monitoring",
+      "Marketing teams"
+    ],
+    "techStack": [
+      "Python",
+      "BeautifulSoup",
+      "HuggingFace Transformers",
+      "Plotly",
+      "Streamlit"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6–9 days",
+    "featured": false
+  },
+  {
+    "id": "22",
+    "slug": "shopsmart",
+    "published": true,
+    "order": 22,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=900&q=70",
+    "quip": "'You may also like' — now you built it.",
+    "category": "E-Commerce AI",
+    "title": "ShopSmart – AI Product Recommendation Engine",
+    "tagline": "The Amazon-style 'You may also like' engine, built by you.",
+    "description": "A full e-commerce demo store with an AI recommendation engine using collaborative filtering and content-based filtering, showing personalised products, 'frequently bought together' and trending items.",
+    "problem": "Recommendation engines drive a huge share of online sales. Every e-commerce and OTT company uses them.",
+    "features": [
+      "Demo shopping website",
+      "Collaborative filtering (user-user, item-item)",
+      "Content-based recommendations",
+      "Frequently bought together",
+      "Admin analytics on recommendations"
+    ],
+    "useCases": [
+      "E-commerce stores",
+      "OTT and music apps",
+      "Online course platforms"
+    ],
+    "techStack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn / Surprise",
+      "Django / Flask",
+      "MySQL"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–14 days",
+    "featured": false
+  },
+  {
+    "id": "23",
+    "slug": "wastewise",
+    "published": true,
+    "order": 23,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=900&q=70",
+    "quip": "Teaching humans which bin is which. Finally.",
+    "category": "Green AI",
+    "title": "WasteWise – AI Garbage Classification for Recycling",
+    "tagline": "Snap a photo of waste, AI tells which bin it goes in.",
+    "description": "A computer vision model that classifies waste into plastic, paper, metal, glass, organic and e-waste categories, guiding correct disposal and supporting smart dustbins with automatic sorting.",
+    "problem": "Improper waste segregation pollutes cities and wastes recyclable material. Smart segregation is a key Swachh Bharat goal.",
+    "features": [
+      "Image upload or live camera",
+      "CNN waste classifier (6+ categories)",
+      "Disposal and recycling tips",
+      "Smart bin integration (Arduino optional)",
+      "Eco-points gamification"
+    ],
+    "useCases": [
+      "Municipal corporations",
+      "Smart campuses",
+      "Recycling companies"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / Keras",
+      "OpenCV",
+      "Flask",
+      "Arduino (optional)"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": false
+  },
+  {
+    "id": "24",
+    "slug": "airaware",
+    "published": true,
+    "order": 24,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=70",
+    "quip": "Know when to skip the morning jog.",
+    "category": "Green AI",
+    "title": "AirAware – Air Quality Index Prediction & Alerts",
+    "tagline": "Predict tomorrow's pollution levels and alert people before it gets bad.",
+    "description": "A machine learning system that predicts AQI using pollutant levels (PM2.5, PM10, NO2) and weather data, shows a city-wise pollution map and sends health alerts to users when air quality becomes unsafe.",
+    "problem": "Air pollution causes serious health issues in Indian cities. People need advance warnings to protect themselves.",
+    "features": [
+      "Historical and live pollution data",
+      "AQI forecasting with ML / LSTM",
+      "Interactive pollution map",
+      "Health advice by AQI level",
+      "Email / notification alerts"
+    ],
+    "useCases": [
+      "Smart city dashboards",
+      "Health apps",
+      "Environmental research"
+    ],
+    "techStack": [
+      "Python",
+      "Scikit-learn / LSTM",
+      "Flask",
+      "Leaflet.js maps",
+      "OpenAQ API"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": false
+  },
+  {
+    "id": "25",
+    "slug": "crowdcount",
+    "published": true,
+    "order": 25,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=900&q=70",
+    "quip": "Counts people so security doesn't have to.",
+    "category": "Computer Vision",
+    "title": "CrowdCount – Crowd Density Monitoring & Stampede Alert",
+    "tagline": "Count people in real time and prevent overcrowding disasters.",
+    "description": "A deep learning based crowd monitoring system that counts people from CCTV footage, creates density heatmaps and raises alerts when a zone crosses a safe limit, helping prevent stampedes at events and temples.",
+    "problem": "Overcrowding at festivals, railway stations and events has led to tragic stampedes. Real-time monitoring can save lives.",
+    "features": [
+      "People detection and counting with YOLO",
+      "Density heatmap overlay",
+      "Zone-wise safe limit alerts",
+      "Live dashboard with count graph",
+      "Works on recorded or live video"
+    ],
+    "useCases": [
+      "Temples and festivals",
+      "Railway and metro stations",
+      "Malls and stadiums"
+    ],
+    "techStack": [
+      "Python",
+      "YOLOv8",
+      "OpenCV",
+      "Flask / Streamlit",
+      "Chart.js"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–12 days",
+    "featured": false
+  },
+  {
+    "id": "26",
+    "slug": "codementor-ai",
+    "published": true,
+    "order": 26,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70",
+    "quip": "Code review without the senior's sighs.",
+    "category": "Generative AI",
+    "title": "CodeMentor AI – AI Code Reviewer & Bug Explainer",
+    "tagline": "Paste your code, AI finds bugs, explains them and suggests fixes.",
+    "description": "An AI-powered coding assistant where users paste code in any language and get a code review, bug detection, time-complexity analysis, line-by-line explanation and an optimised version, all inside a code editor interface.",
+    "problem": "Beginners get stuck on errors for hours and do not understand why code fails. AI coding tools are reshaping software development.",
+    "features": [
+      "Monaco code editor in browser",
+      "Multi-language support",
+      "Bug detection and fix suggestions",
+      "Time and space complexity analysis",
+      "Code explanation for beginners"
+    ],
+    "useCases": [
+      "Programming students",
+      "Coding bootcamps",
+      "Developer productivity tools"
+    ],
+    "techStack": [
+      "React",
+      "Node.js / FastAPI",
+      "LLM API",
+      "Monaco Editor",
+      "MongoDB"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "10–12 days",
+    "featured": true
+  },
+  {
+    "id": "27",
+    "slug": "legalease-ai",
+    "published": true,
+    "order": 27,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=70",
+    "quip": "Fine print, finally readable.",
+    "category": "Generative AI",
+    "title": "LegalEase AI – Legal Document Summarizer & Risk Finder",
+    "tagline": "Understand any agreement in plain English — risky clauses highlighted.",
+    "description": "A generative AI tool that reads legal documents like rental agreements, offer letters and contracts, summarises them in simple language, highlights risky clauses and answers questions about the document.",
+    "problem": "Most people sign documents without understanding them because legal language is complex and lawyers are expensive.",
+    "features": [
+      "Upload PDF / DOCX contracts",
+      "Plain-language summary",
+      "Risky clause detection and highlighting",
+      "Ask questions about the document",
+      "Multi-language summary"
+    ],
+    "useCases": [
+      "Individuals signing agreements",
+      "Startups and small businesses",
+      "Law students"
+    ],
+    "techStack": [
+      "Python",
+      "LangChain",
+      "LLM API",
+      "PyPDF2",
+      "Streamlit / React"
+    ],
+    "difficulty": "Intermediate",
+    "duration": "8–12 days",
+    "featured": false
+  },
+  {
+    "id": "28",
+    "slug": "fitform-ai",
+    "published": true,
+    "order": 28,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=70",
+    "quip": "Your gym trainer, minus the shouting.",
+    "category": "Computer Vision",
+    "title": "FitForm AI – Exercise Posture Correction Trainer",
+    "tagline": "A virtual gym trainer that counts reps and corrects your posture live.",
+    "description": "A pose-estimation fitness app that tracks body joints through the webcam, counts exercise reps (squats, push-ups, curls), checks posture angles and gives real-time voice feedback to prevent injury.",
+    "problem": "Wrong exercise posture causes injuries, and personal trainers are expensive. AI can coach anyone at home.",
+    "features": [
+      "Real-time pose detection (33 body points)",
+      "Automatic rep counting",
+      "Posture angle analysis and correction",
+      "Voice feedback",
+      "Workout history and calories chart"
+    ],
+    "useCases": [
+      "Home fitness apps",
+      "Physiotherapy and rehab",
+      "Gyms and yoga centres"
+    ],
+    "techStack": [
+      "Python",
+      "MediaPipe Pose",
+      "OpenCV",
+      "Streamlit / Flask",
+      "pyttsx3"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": true
+  },
+  {
+    "id": "29",
+    "slug": "emotionlens",
+    "published": true,
+    "order": 29,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=70",
+    "quip": "It knows you're bored in the lecture.",
+    "category": "Computer Vision",
+    "title": "EmotionLens – Real-Time Facial Emotion Recognition",
+    "tagline": "AI that reads happy, sad, angry or surprised faces in real time.",
+    "description": "A deep learning system that detects faces from webcam or video and classifies emotions into 7 categories, with use cases like student engagement tracking in online classes and emotion-based music recommendation.",
+    "problem": "Understanding human emotion helps in online education, customer service and mental health monitoring.",
+    "features": [
+      "Live face detection",
+      "CNN emotion classifier (FER-2013 dataset)",
+      "Emotion timeline graph",
+      "Class engagement report",
+      "Emotion-based music suggestion"
+    ],
+    "useCases": [
+      "Online classes engagement",
+      "Customer feedback kiosks",
+      "Mental health monitoring"
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow / Keras",
+      "OpenCV",
+      "Flask",
+      "Chart.js"
+    ],
+    "difficulty": "Beginner",
+    "duration": "6–9 days",
+    "featured": false
+  },
+  {
+    "id": "30",
+    "slug": "travelgenie",
+    "published": true,
+    "order": 30,
+    "pricing": [
+      {
+        "name": "Full Source Code + Setup on your laptop",
+        "price": 3500,
+        "included": true
+      },
+      {
+        "name": "Project Report / Documentation (black book)",
+        "price": 1000,
+        "included": true
+      },
+      {
+        "name": "Project Presentation (PPT)",
+        "price": 500,
+        "included": true
+      },
+      {
+        "name": "Research Paper (IEEE format)",
+        "price": 1500,
+        "included": false
+      },
+      {
+        "name": "Live Deployment (hosted online link)",
+        "price": 1000,
+        "included": false
+      },
+      {
+        "name": "Code Explanation + Viva Preparation Call",
+        "price": 500,
+        "included": true
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=70",
+    "quip": "Wanderlust with a spreadsheet brain.",
+    "category": "Generative AI",
+    "title": "TravelGenie – AI Trip Planner & Itinerary Generator",
+    "tagline": "Tell your budget and days, AI plans the perfect trip day by day.",
+    "description": "A generative AI travel planner where users enter destination, budget, days and interests, and the AI creates a complete day-wise itinerary with places, food suggestions, estimated cost and a map view.",
+    "problem": "Planning a trip takes hours of research across many websites. AI can do it in seconds, personalised for each person.",
+    "features": [
+      "Budget, days and interest based input",
+      "Day-wise itinerary generation with LLM",
+      "Map view of all places",
+      "Estimated cost breakdown",
+      "Download itinerary as PDF"
+    ],
+    "useCases": [
+      "Travel agencies",
+      "Tourism departments",
+      "Student trip planning"
+    ],
+    "techStack": [
+      "React / HTML",
+      "Node.js / Flask",
+      "LLM API",
+      "Google Maps / Leaflet",
+      "MongoDB"
+    ],
+    "difficulty": "Beginner",
+    "duration": "7–10 days",
+    "featured": false
+  }
+]

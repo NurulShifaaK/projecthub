@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-pixel: "Pixelify Sans", ui-monospace, monospace;
+  --font-hand: "Caveat", cursive;
+
+  --color-paper: #F5F3EE;
+  --color-paper-2: #ECE8DF;
+  --color-ink: #111111;
+  --color-ink-2: #2B2B2B;
+  --color-mute: #6B6B66;
+  --color-line: #DCD7CC;
+
+  --color-sun: #FFE14D;
+  --color-sun-2: #FFF3A6;
+  --color-bubble: #FFB3CF;
+  --color-bubble-2: #FFDDE9;
+  --color-sky: #3D5AFE;
+  --color-sky-2: #CDD6FF;
+  --color-mint: #8EE3A6;
+  --color-mint-2: #D6F5DF;
+  --color-lilac: #CDB8FF;
+  --color-lilac-2: #ECE3FF;
+  --color-tang: #FF6A3D;
+  --color-wa: #25D366;
+  --color-wa-2: #1DA851;
+
+  --shadow-paper: 0 1px 0 rgba(0,0,0,.04), 0 10px 24px -8px rgba(30,25,10,.18);
+  --shadow-lift: 0 2px 0 rgba(0,0,0,.05), 0 24px 40px -12px rgba(30,25,10,.28);
+  --shadow-hard: 4px 4px 0 #111;
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  background-image:
+    linear-gradient(rgba(17,17,17,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,17,17,.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+::selection { background: var(--color-sun); color: #111; }
+
+/* notebook ruled paper */
+.bg-ruled {
+  background-color: #FBFAF6;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(61,90,254,.12) 31px, rgba(61,90,254,.12) 32px);
+}
+.bg-grid-dark {
+  background-color: #121212;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* washi tape */
+.tape {
+  position: absolute; height: 26px; width: 92px; z-index: 5;
+  background: rgba(255, 225, 77, .78);
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  -webkit-mask: linear-gradient(90deg, transparent 0 3px, #000 3px calc(100% - 3px), transparent calc(100% - 3px)),
+                repeating-linear-gradient(90deg, #000 0 4px, transparent 4px 6px);
+  -webkit-mask-composite: source-over;
+}
+.tape::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,.18) 0 6px, transparent 6px 12px); }
+
+/* glossy push pin */
+.pin { width: 22px; height: 22px; border-radius: 9999px; position: absolute; z-index: 6;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.85) 0 3px, transparent 4px), var(--pin, #FF6A3D);
+  box-shadow: inset -3px -4px 6px rgba(0,0,0,.25), 0 6px 8px -2px rgba(0,0,0,.35);
+}
+.pin::after { content: ""; position: absolute; left: 50%; top: 18px; width: 2px; height: 10px; transform: translateX(-50%); background: linear-gradient(#999,#ddd); border-radius: 2px; z-index: -1; }
+
+/* receipt zigzag edge */
+.receipt-edge { position: relative; }
+.receipt-edge::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -10px; height: 10px;
+  background: linear-gradient(-45deg, transparent 7px, #fff 0) 0 0/14px 14px, linear-gradient(45deg, transparent 7px, #fff 0) 0 0/14px 14px;
+  background-repeat: repeat-x;
+}
+
+.hl { background: linear-gradient(transparent 12%, var(--color-bubble-2) 12%, var(--color-bubble-2) 92%, transparent 92%); padding: 0 .08em; }
+.squiggle { text-decoration: underline wavy var(--color-tang); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* numbers: pixel font makes 5 look like S, so prices use Inter */
+.num { font-family: var(--font-sans); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
